@@ -1,19 +1,20 @@
 \documentclass{article}
-\selectlanguage{spanish}
+\usepackage[spanish]{babel} 
+
 \usepackage[utf8]{inputenc}
 \usepackage[]{minted}
-
-\title{Tutorial Raspberry Pi}
-\author{David R Castaneda}
-\date{\today}
-
 \usepackage{natbib}
 \usepackage{graphicx}
 \usepackage{listings}
 
 \begin{document}
 
+\title{Tutorial Raspberry Pi}
+\author{David R Castaneda}
+\date{\today}
+
 \maketitle
+sudo apt-get install texlive-lang-all
 
 \section{Setear IP Fija}
 
@@ -283,7 +284,7 @@ Estas carpetas las creamos con anterioridad y están en un disco externo con el 
 
 \begin{lstlisting}[frame=single,framesep=7pt]
 ...
-"rpc-password": "mi contraseña",
+"rpc-password": "mi contrasena",
 ...
 "rpc-username": "mi usario",
 ...
@@ -373,12 +374,12 @@ Las líneas indicadas a continuación son las que debemos editar en este fichero
 "incomplete-dir-enabled": false, 
 "peer-port": 44027, 
 "rpc-authentication-required": true, 
-"rpc-bind-address”: “0.0.0.0″, 
-"rpc-enabled”: true, 
-"rpc-password”: “contraseña", 
+"rpc-bind-address": "0.0.0.0", 
+"rpc-enabled": true, 
+"rpc-password": "contrasena", 
 "rcp-port": 9091, 
-"rpc-username”: “nombre", 
-"rpc-whitelist-enabled”: false,
+"rpc-username": "nombre", 
+"rpc-whitelist-enabled": false,
 \end{lstlisting}
 
 Guardamos el fichero con los cambios realizados (Ctrl+o, Intro, Ctrl+x), arrancamos de nuevo el servicio:
